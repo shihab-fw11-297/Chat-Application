@@ -10,9 +10,9 @@ const MyMessage = ({ message }) => {
       );
     }
   
-    return (
+       return (
       <div className="message" style={{ float: 'right', marginRight: '18px', color: 'white', backgroundColor: '#3B2A50' }}>
-        {message.text}
+        <span dangerouslySetInnerHTML={{ __html: message.text }} />
       </div>
     );
   };
